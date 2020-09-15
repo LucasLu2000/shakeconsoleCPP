@@ -62,7 +62,7 @@ int main() {
 	  }
 
    } // results
-  cout << "What to search for? Return to end: ";
+  cout << "What to search for? Type | to end: ";
   cin >> word;
 }
 }
