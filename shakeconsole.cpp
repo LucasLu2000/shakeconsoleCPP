@@ -22,7 +22,7 @@ int main() {
   list<int>::iterator it;
   int position;
   string fileName = "Shakespeare.txt";
-  string word, line;
+  string word = "word", line;
   // create text index
   textindex index(fileName);
 
@@ -37,9 +37,10 @@ int main() {
     exit (1);
   }
 
-  while (1) {
-    cout << "What to search for? ";
-    cin >> word;
+	
+  cout << "What to search for? Return to end: ";
+  cin >> word;
+  while (word != "") {
     result = index.indexSearch(word);
     int results = result.size();
 
@@ -61,5 +62,7 @@ int main() {
 	  }
 
    } // results
+  cout << "What to search for? Return to end: ";
+  cin >> word;
 }
 }
