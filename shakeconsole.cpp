@@ -38,9 +38,9 @@ int main() {
   }
 
 	
-  cout << "What to search for? Return to end: ";
+  cout << "What to search for? Type | to end: ";
   cin >> word;
-  while (word != "") {
+  while (word != "|") {
     result = index.indexSearch(word);
     int results = result.size();
 
